@@ -12,8 +12,8 @@ public class Main {
        System.out.println(start);
        while (userChoice) {
         kalkylMetod.MainMenu(start);
-        int menuScan = scanner.nextInt();
-                System.out.println();
+        System.out.print("\t\t\t");
+        int menuScan = scanner.nextInt();System.out.println("------> ------->");
 
         switch (menuScan) {
             case 1 : System.out.println("Vilka två tal vill du få summan utav? Avskilj termerna med mellanslag, avsluta med enter.");
@@ -34,13 +34,19 @@ public class Main {
             System.out.println("________________________________________________");
             System.out.println();
             break;
-            case 4 : System.out.println("Vilka två tal vill du få kvoten utav? Avskilj med mellanslag, avsluta med enter.") ;
+            case 4 : System.out.println("Vilka två tal vill du få kvoten utav? Avskilj med mellanslag, avsluta med enter.");
             double userDivFirst = scanner.nextDouble(); double userDivSecond = scanner.nextDouble();;
             kalkylMetod.div(userDivFirst, userDivSecond);
             System.out.println("________________________________________________");
             System.out.println();
             break;
-            case 5 : System.out.println(" Avslutar programmet ! \n Tack för att du använde Wigells räkna-ihop-siffror-apparat.");
+            case 5 : System.out.println("Modulus räknar ut resten efter du dividerat två tal. Vilka två tal vill du testa ? Avskilj med mellanslag, avsluta med enter.");
+                double userModFirst = scanner.nextDouble(); double userModSecond = scanner.nextDouble();;
+                kalkylMetod.modu(userModFirst, userModSecond);
+            System.out.println("________________________________________________");
+            System.out.println();
+            break;
+            case 6 : System.out.println(" Avslutar programmet ! \n Tack för att du använde Wigells räkna-ihop-siffror-apparat.");
             userChoice = false;
             break;
                 default : System.out.println(" Åh nej, något blev fel! Prova att ange siffran till vänster om vald räknemetod i menyn. ");

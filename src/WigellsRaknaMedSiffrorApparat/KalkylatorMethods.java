@@ -11,7 +11,8 @@ public class KalkylatorMethods {
         System.out.println("[2] Subtraktion");
         System.out.println("[3] Multiplikation");
         System.out.println("[4] Division");
-        System.out.println("[5] Avsluta programmet!");
+        System.out.println("[5] Modulus");
+        System.out.println("[6] Avsluta programmet!");
     }
 
 
@@ -31,7 +32,9 @@ public class KalkylatorMethods {
     public void div(double x, double y) {
         System.out.println("Kvoten av talen blir = "+(x/y));
     }
-    }
+    // Modulus
+    public void modu(double x,double y) {System.out.println("Resten ur ditt dividerade tall blir = "+(x%y));}
+}
 
 
 
