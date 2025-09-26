@@ -16,13 +16,17 @@ public class KalkylatorMethods {
     }
 
 
-// Addition
-
+    // Addition
     public void add(int x, int y){
         System.out.println("Summan av talen blir = " +(x+y));
     }
+    // Subtraktion
     public void sub(int x,int y) {
         System.out.println("Differensen av talen blir = " + (x-y));
+    }
+    // Multiplikation
+    public void mulit(double x, double y){
+        System.out.println("Produkten av talen blir = "+ (x*y));
     }
     }
 
