@@ -6,8 +6,7 @@ public class KalkylatorMethods {
 
     public void MainMenu(String x ){
 
-        System.out.println("Välkommen till Wigells räkna-med-siffor-apparat.\n" +
-                "Välj en av följande räknemetoder genom att skriva in funktionens nummer:\n");
+        System.out.println("Välj en av räknemetoderna.\nSkriv in funktionens nummer och bekräfta med enter.\n");
         System.out.println("[1] Addition");
         System.out.println("[2] Subtraktion");
         System.out.println("[3] Multiplikation");
@@ -17,16 +16,20 @@ public class KalkylatorMethods {
 
 
     // Addition
-    public void add(int x, int y){
+    public void add(double x, double y){
         System.out.println("Summan av talen blir = " +(x+y));
     }
     // Subtraktion
-    public void sub(int x,int y) {
+    public void sub(double x,double y) {
         System.out.println("Differensen av talen blir = " + (x-y));
     }
     // Multiplikation
     public void mulit(double x, double y){
         System.out.println("Produkten av talen blir = "+ (x*y));
+    }
+    //Division
+    public void div(double x, double y) {
+        System.out.println("Kvoten av talen blir = "+(x/y));
     }
     }
 
