@@ -21,10 +21,8 @@ public class Main {
                   kalkylMetod.MainMenu(start);
         System.out.print("\t\t\t");
         String userMenuIn =scanner.next();
-        int menuScan = userMenuIn.charAt(0);
-
-
         System.out.println("------> ------->");
+        int menuScan = userMenuIn.charAt(0);
 
         switch (menuScan) {
             case '1' :
