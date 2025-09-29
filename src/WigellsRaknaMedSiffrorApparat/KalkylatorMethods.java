@@ -30,8 +30,12 @@ public class KalkylatorMethods {
     }  //Division
 
     public void div(double x, double y) {
-        System.out.println("Kvoten av talen blir = " + (x / y));
-    } // hur göra när användare använder 0? Infinity
+        if (y == 0) {
+            System.out.println("Tyvärr, det går inte dela ett tal med noll. Försök igen");
+        } else {
+            System.out.println("Kvoten av talen blir = " + (x / y));
+        }
+    }
 
     // Modulus
     public void modu(double x, double y) {
@@ -43,7 +47,4 @@ public class KalkylatorMethods {
             System.out.println("Resten ur ditt dividerade tall blir = " + (x % y));
         }
     }
-
-
-
 }
